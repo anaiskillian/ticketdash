@@ -580,6 +580,14 @@ export const links = [
   //   ],
   // },
 ];
+export const ticketData = {
+  artistName: '',
+  eventName: '',
+  date: '',
+  time: '',
+  price: '',
+  location: '',
+};
 
 export const cartData = [
   {
