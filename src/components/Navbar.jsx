@@ -16,11 +16,11 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
       type="button"
       onClick={customFunc}
       style={{ color }}
-      className="relative text-xl rounded-full p-3 hover:bg-light-gray"
+      className="relative text-3xl rounded-full p-6 hover:bg-light-gray"
     >
       <span
         style={{ background: dotColor }}
-        className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
+        className="absolute inline-flex rounded-full h-4 w-4 right-4 top-4"
       />
       {icon}
     </button>
@@ -63,38 +63,25 @@ const Navbar = () => {
 
       <div className="flex">
         <NavButton
-          title="Cart"
-          customFunc={() => handleClick("cart")}
-          color={currentColor}
-          icon={<FiShoppingCart />}
-        />
-        <NavButton
-          title="Chat"
-          dotColor="#03C907"
-          customFunc={() => handleClick("chat")}
-          color={currentColor}
-          icon={<BsChatLeft />}
-        />
-        <NavButton
           title="Notifications"
           dotColor="#03C907"
           customFunc={() => handleClick("notification")}
           color={currentColor}
-          icon={<RiNotification3Line />}
+          icon={<RiNotification3Line size={30}/>}
         />
         <TooltipComponent content="Profile" position="BottomCenter">
           <div
             className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
             onClick={() => handleClick("userProfile")}
           >
-            <img src={avatar} alt="user" className="rounded-full w-8 h-8 " />
+            <img src={avatar} alt="user" className="rounded-full w-12 h-12 " />
             <p>
-              <span className="text-gray-400 text-14">Hi,</span>{" "}
-              <span className="text-gray-400 font-bold ml-1 text-14">
+              <span className="text-gray-400 text-24">Hi,</span>{" "}
+              <span className="text-gray-400 font-bold ml-1 text-24">
                 Anaïs
               </span>
             </p>
-            <MdKeyboardArrowDown className="text-gray-400 text-14" />
+            <MdKeyboardArrowDown className="text-gray-400 text-24" />
           </div>
         </TooltipComponent>
 

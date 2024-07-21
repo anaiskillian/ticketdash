@@ -607,12 +607,6 @@ export const chatData = [
     desc: "Check your earnings",
     time: "4:39 AM",
   },
-  {
-    image: avatar,
-    message: "Jolly completed tasks",
-    desc: "Assign her new tasks",
-    time: "1:12 AM",
-  },
 ];
 
 export const earningData = [
