@@ -16,6 +16,7 @@ import {
 } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 import product9 from "../data/product9.jpg";
+// import DailyTraffic from './DailyTraffic';
 
 const Ecommerce = () => {
   const { currentColor } = useStateContext();
@@ -23,21 +24,14 @@ const Ecommerce = () => {
   return (
     <div className="mt-12 ">
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
+        {/* Daily Traffic Component */}
+        {/* <DailyTraffic /> */}
         <div className="bg-white dark:text-gray-200  dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-left">
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Earnings</p>
               <p className="text-2xl">$107,890.84</p>
             </div>
-          </div>
-          <div className="mt-6">
-            <Button
-              color="white" 
-              bgColor={currentColor}
-              text="Download"
-              borderRadius="10px"
-              size="md"
-            />
           </div>
         </div>
 
@@ -112,14 +106,6 @@ const Ecommerce = () => {
                   width="250px"
                   data={SparklineAreaData}
                   color={currentColor}
-                />
-              </div>
-              <div className="mt-10">
-                <Button
-                  color="white"
-                  bgColor={currentColor}
-                  text="Download Report"
-                  borderRadius="10px"
                 />
               </div>
             </div>

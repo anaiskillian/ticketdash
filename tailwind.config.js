@@ -38,10 +38,6 @@ module.exports = {
       minHeight: {
         590: "590px",
       },
-      backgroundImage: {
-        "hero-pattern":
-          "url('https://raw.githubusercontent.com/RohitKS7/Admin_Dashboard/master/src/data/cyber-monday-retail-sales.png')",
-      },
     },
   },
   plugins: [],

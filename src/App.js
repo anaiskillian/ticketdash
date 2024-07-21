@@ -9,7 +9,6 @@ import {
   Ecommerce,
   Orders,
   Calendar,
-  Employees,
   Stacked,
   Pyramid,
   Customers,
@@ -74,7 +73,6 @@ const App = () => {
 
                 {/* pages  */}
                 <Route path="/orders" element={<Orders />} />
-                <Route path="/employees" element={<Employees />} />
                 <Route path="/customers" element={<Customers />} />
 
                 {/* apps  */}

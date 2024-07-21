@@ -12,7 +12,7 @@ const Calendar = () => {
   <ScheduleComponent
   height='650px'
   eventSettings={{ dataSource: scheduleData}}
-  selectedDate={new Date(2021, 0, 10)}
+  selectedDate={new Date(2024, 6, 21)}
   >
     <Inject services={[Day, Week, Month, Agenda, Resize, DragAndDrop] }/>
   </ScheduleComponent>
